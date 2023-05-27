@@ -21,7 +21,7 @@ export default {
         id: Math.round(Math.random() * 30),
         avatar: `https://avatars.dicebear.com/api/male/${Date.now()}.svg`,
         body: body.value,
-        data: new Date(Date.now()).toLocaleString(),
+        date: new Date(Date.now()).toLocaleString(),
         likes: 0,
       });
       body.value = "";

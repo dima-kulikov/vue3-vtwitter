@@ -32,7 +32,7 @@ export default {
         likes: 1,
         body: "hello vue3",
         avatar: "https://avatars.dicebear.com/api/male/343.svg",
-        data: new Date(Date.now()).toLocaleString(),
+        date: new Date(Date.now()).toLocaleString(),
       },
     ]);
     function handleSubmit(item) {

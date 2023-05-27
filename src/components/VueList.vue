@@ -1,4 +1,9 @@
 <template>
+  <select v-model="sortBy">
+    <option value="data">Sort by date</option>
+    <option value="likes">Sort by Like</option>
+  </select>
+  <p>{{ sortBy }}</p>
   <ul class="tweets__wrapper">
     <VueItem v-for="item in items" :key="item.id" :item="item" />
   </ul>
@@ -6,6 +11,7 @@
 
 
 <script>
+import { ref } from "vue";
 import VueItem from "@/components/VueItem.vue";
 export default {
   props: {
@@ -16,6 +22,13 @@ export default {
   },
   components: {
     VueItem,
+  },
+  setup() {
+    const sortBy = ref("date");
+
+    return {
+      sortBy,
+    };
   },
 };
 </script>

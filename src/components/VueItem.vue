@@ -6,7 +6,7 @@
       </div>
       <div class="tweet-content">
         <div class="tweet-header">
-          <span>{{ item.data }}</span>
+          <span>{{ item.date }}</span>
         </div>
         <span>{{ item.body }}</span>
         <div class="like">
