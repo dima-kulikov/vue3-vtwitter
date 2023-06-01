@@ -30,19 +30,19 @@ export default {
       {
         id: 1,
         likes: 1,
-        body: "toha 23",
+        body: "Toha 23",
         avatar: "https://avatars.dicebear.com/api/male/343.svg",
         date: new Date(Date.now()).toLocaleString(),
       },
       {
         id: 2,
         likes: 3,
-        body: "happy bee",
+        body: "Happy bee",
         avatar: "https://avatars.dicebear.com/api/male/34d3.svg",
         date: new Date(Date.now()).toLocaleString(),
       },
       {
-        id: 2,
+        id: 3,
         likes: 7,
         body: "Hot Summer",
         avatar: "https://avatars.dicebear.com/api/male/3иd3.svg",

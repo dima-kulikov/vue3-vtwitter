@@ -77,13 +77,15 @@ section,
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
+    background: bottom;
 }
 
 .wrapper-content {
     display: flex;
     flex-direction: column;
     min-height: 70vh;
-    margin-top: 40px; // if header is fixed do 40px+headerHeight
+    
+
 }
 
 .container {
@@ -114,6 +116,8 @@ section,
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    background: wheat;
+    padding: 50px 15px
 }
 
 @import './common/_common';
