@@ -3,5 +3,7 @@
 //   transpileDependencies: true
 // })
 module.exports = {
-  publicPath:'/vue3-vtwitter/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue3-vtwitter/'
+    : '/'
 }
