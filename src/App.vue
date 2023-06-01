@@ -30,14 +30,29 @@ export default {
       {
         id: 1,
         likes: 1,
-        body: "hello vue3",
+        body: "toha 23",
         avatar: "https://avatars.dicebear.com/api/male/343.svg",
+        date: new Date(Date.now()).toLocaleString(),
+      },
+      {
+        id: 2,
+        likes: 3,
+        body: "happy bee",
+        avatar: "https://avatars.dicebear.com/api/male/34d3.svg",
+        date: new Date(Date.now()).toLocaleString(),
+      },
+      {
+        id: 2,
+        likes: 7,
+        body: "Hot Summer",
+        avatar: "https://avatars.dicebear.com/api/male/3иd3.svg",
         date: new Date(Date.now()).toLocaleString(),
       },
     ]);
     function handleSubmit(item) {
       items.value.push(item);
     }
+
     return {
       items,
       handleSubmit,

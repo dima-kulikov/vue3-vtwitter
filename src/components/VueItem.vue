@@ -10,7 +10,7 @@
         </div>
         <span>{{ item.body }}</span>
         <div class="like">
-          <div class="icon">
+          <div :onclick="upLikes" class="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -32,16 +32,24 @@
       </div>
     </div>
   </li>
-  <!-- <p>{{ title }}</p> -->
 </template>
 
 <script>
 export default {
+  emits: ["upLikes"],
   props: {
     item: {
       type: Object,
       reqired: true,
     },
+  },
+  setup(props, { emit }) {
+    const upLikes = () => {
+      emit("upLikes", props.item.id);
+    };
+    return {
+      upLikes,
+    };
   },
 };
 </script>
